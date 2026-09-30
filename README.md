@@ -18,6 +18,10 @@
 | 🖱 交互 | 拖动移动（位置记忆）、单击开气泡、双击收拢成睡觉小鲸鱼（再双击展开） |
 | 🛟 健壮性 | 部件图加载失败自动降级；渲染错误由错误边界隔离，不会拖垮整个界面 |
 
+<p align="center">
+  <img src="docs/preview.png" alt="dsh-whale-pet 桌宠预览" width="228">
+</p>
+
 ## 峰谷计价规则
 
 数据来自 [DeepSeek 官方模型 & 价格页](https://api-docs.deepseek.com/zh-cn/quick_start/pricing)
