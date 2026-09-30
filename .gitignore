@@ -1,0 +1,16 @@
+# Editors / OS
+.DS_Store
+Thumbs.db
+*.log
+
+# Dependencies (this package has none; keep the tree clean anyway)
+node_modules/
+pnpm-lock.yaml
+package-lock.json
+
+# Optional local fallback image (not redistributed: CC BY-NC-SA source)
+assets/whale-maid.png
+
+# Local scratch
+.tools/
+*.tgz

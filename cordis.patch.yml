@@ -1,0 +1,28 @@
+# dsh-whale-pet bundle patch: one dual-face row.
+#
+# The package's main export is the Host half (peak/off-peak pricing engine +
+# HTTP routes); its `dsh.client` declaration turns it into a browser plugin
+# loaded into the web boot graph (`window.__DSH_BOOT__`).
+- insert:
+    - id: whale-pet
+      name: 'dsh-whale-pet'
+      config:
+        # Billing calendar time zone.
+        timeZone: Asia/Shanghai
+        # Peak windows [startHour, endHour), Monday-Friday, local time.
+        # Official: Beijing 09:00-12:00 and 14:00-18:00 are peak; everything
+        # else (weekends, CN statutory holidays) is off-peak at half price.
+        peakRanges:
+          - [9, 12]
+          - [14, 18]
+        # CN statutory holiday breaks ([start, end] inclusive). Update yearly.
+        holidays:
+          - ['2026-01-01', '2026-01-03']
+          - ['2026-02-16', '2026-02-22']
+          - ['2026-04-04', '2026-04-06']
+          - ['2026-05-01', '2026-05-05']
+          - ['2026-06-19', '2026-06-21']
+          - ['2026-09-25', '2026-09-27']
+          - ['2026-10-01', '2026-10-07']
+        # Browser poll interval for /whale-pet/state (ms).
+        pollMs: 5000
