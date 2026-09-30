@@ -35,7 +35,7 @@
 
 ```bash
 # 1. 克隆到任意目录
-git clone https://github.com/<your-name>/dsh-whale-pet.git
+git clone https://github.com/drfai/dsh-whale-pet.git
 
 # 2. 在 DSH 中安装并启用（本地路径安装）
 #    - 图形界面：设置 → 插件 → 安装 → 选择该目录
